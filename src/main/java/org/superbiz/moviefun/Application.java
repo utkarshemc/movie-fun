@@ -16,4 +16,8 @@ public class Application {
     public ServletRegistrationBean actionServletRegistration(ActionServlet actionServlet) {
         return new ServletRegistrationBean(actionServlet, "/moviefun/*");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ef4d6190760680ba2f510be91b72153dc32ba33b

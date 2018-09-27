@@ -8,4 +8,8 @@ spring:
 
   mvc.view:
     prefix: /WEB-INF/
+<<<<<<< HEAD
     suffix: .jsp
+=======
+    suffix: .jsp
+>>>>>>> ef4d6190760680ba2f510be91b72153dc32ba33b

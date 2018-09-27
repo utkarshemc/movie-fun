@@ -18,10 +18,12 @@ package org.superbiz.moviefun;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
+<<<<<<< HEAD
 import org.superbiz.moviefun.movies.Movie;
 import org.superbiz.moviefun.movies.MoviesBean;
+=======
+>>>>>>> ef4d6190760680ba2f510be91b72153dc32ba33b
 
-import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,7 +41,10 @@ public class ActionServlet extends HttpServlet {
 
     public static int PAGE_SIZE = 5;
 
-    @EJB
+    public ActionServlet(MoviesBean moviesBean) {
+        this.moviesBean = moviesBean;
+    }
+
     private MoviesBean moviesBean;
 
     @Override
